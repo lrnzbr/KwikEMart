@@ -28,6 +28,8 @@
 		EB1725AA2562FE1B007768FF /* CatalogItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1725A82562FE1B007768FF /* CatalogItemCollectionViewCell.xib */; };
 		EB1725B625634EFE007768FF /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1725B425634EFE007768FF /* ProductDetailViewController.swift */; };
 		EB1725B725634EFE007768FF /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1725B525634EFE007768FF /* ProductDetailViewController.xib */; };
+		EB5F35A42563EB9C003EE744 /* Simpsonfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB5F35A22563EB9C003EE744 /* Simpsonfont.ttf */; };
+		EB5F35A52563EB9C003EE744 /* akbar.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB5F35A32563EB9C003EE744 /* akbar.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		EB1725A82562FE1B007768FF /* CatalogItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		EB1725B425634EFE007768FF /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		EB1725B525634EFE007768FF /* ProductDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
+		EB5F35A22563EB9C003EE744 /* Simpsonfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Simpsonfont.ttf; path = simpsonfont/Simpsonfont.ttf; sourceTree = SOURCE_ROOT; };
+		EB5F35A32563EB9C003EE744 /* akbar.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = akbar.ttf; path = simpsonfont/akbar.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		EB1725062562D4D8007768FF /* GreyDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB5F35A12563EB79003EE744 /* Fonts */,
 				EB1725A62562FDC9007768FF /* Catalog */,
 				EB1725A52562FDAF007768FF /* Login */,
 				EB1725072562D4D8007768FF /* AppDelegate.swift */,
@@ -181,6 +186,15 @@
 				EB1725B525634EFE007768FF /* ProductDetailViewController.xib */,
 			);
 			name = Catalog;
+			sourceTree = "<group>";
+		};
+		EB5F35A12563EB79003EE744 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB5F35A32563EB9C003EE744 /* akbar.ttf */,
+				EB5F35A22563EB9C003EE744 /* Simpsonfont.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1725872562E3BF007768FF /* CashierCollectionViewCell.xib in Resources */,
+				EB5F35A52563EB9C003EE744 /* akbar.ttf in Resources */,
 				EB1725AA2562FE1B007768FF /* CatalogItemCollectionViewCell.xib in Resources */,
 				EB1725932562F108007768FF /* CashierLoginViewController.xib in Resources */,
 				EB1725142562D4DA007768FF /* LaunchScreen.storyboard in Resources */,
@@ -295,6 +310,7 @@
 				EB1725112562D4DA007768FF /* Assets.xcassets in Resources */,
 				EB17259A2562FA2D007768FF /* CatalogViewController.xib in Resources */,
 				EB1725432562D907007768FF /* LoginViewController.xib in Resources */,
+				EB5F35A42563EB9C003EE744 /* Simpsonfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

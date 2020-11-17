@@ -13,7 +13,6 @@ class CatalogViewController: UIViewController,UICollectionViewDelegate, UICollec
     @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var cashierNameLabel: UILabel!
     var cashier:Cashier!
-    var cart:[String:Int] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +29,6 @@ class CatalogViewController: UIViewController,UICollectionViewDelegate, UICollec
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        cart = ShoppingCart.sharedInstance.getShoppingBasketItems()
         itemsTableView.reloadData()
         menuCollectionView.reloadData()
     }
@@ -51,16 +49,16 @@ class CatalogViewController: UIViewController,UICollectionViewDelegate, UICollec
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cart.keys.count
+        return ShoppingCart.sharedInstance.getShoppingBasketItems().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let lineItem = cart.keys.sorted()[indexPath.row]
+        let lineItem = ShoppingCart.sharedInstance.getShoppingBasketItems().keys.sorted()[indexPath.row]
         let product = ShoppingCart.sharedInstance.getItem(lineItem)
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemsCell",
                                                  for: indexPath) as! ItemsTableViewCell
         cell.productNameLabel.text = product?.productName
-        cell.quantityLabel.text = String(cart[lineItem]!)
+        cell.quantityLabel.text = String(ShoppingCart.sharedInstance.getShoppingBasketItems()[lineItem]!)
         cell.subtotalLabel.text = String(format: "$%.02f", product?.productPrice! as! CVarArg)
         return cell
     }
