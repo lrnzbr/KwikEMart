@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cashierCell" id="gTV-IL-0wX" customClass="CashierCollectionViewCell" customModule="GreyDemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="459"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="459"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="14" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cvz-Co-HGR">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="459"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hse-B3-pWB">
+                                <rect key="frame" x="46" y="0.0" width="263" height="424.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz9-S7-YCz">
+                                <rect key="frame" x="116" y="422.5" width="123.5" height="36.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="355" id="xAT-EK-muc"/>
+                            <constraint firstAttribute="height" constant="459" id="yIZ-wn-rw8"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0yN-Fy-5dc"/>
+                <constraint firstAttribute="trailing" secondItem="Cvz-Co-HGR" secondAttribute="trailing" id="718-v9-Ouu"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9h5-SC-1ea"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9yE-HA-sZh"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AWC-Xh-jqm"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HOC-qT-E5G"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IAr-88-7hC"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IcZ-r0-dR4"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="J8I-Kb-VNd"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="K3p-EQ-T4p"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KcD-Cp-zCb"/>
+                <constraint firstAttribute="bottom" secondItem="Cvz-Co-HGR" secondAttribute="bottom" id="KhG-7u-be1"/>
+                <constraint firstAttribute="trailing" secondItem="Cvz-Co-HGR" secondAttribute="trailing" id="MDo-JO-NDn"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NW2-An-sBy"/>
+                <constraint firstAttribute="bottom" secondItem="Cvz-Co-HGR" secondAttribute="bottom" id="Nfv-6p-Svz"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OZg-FO-b7W"/>
+                <constraint firstAttribute="bottom" secondItem="Cvz-Co-HGR" secondAttribute="bottom" id="Qxr-Od-kxN"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TQa-1Q-aCK"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Vlz-jz-LUY"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WtF-zg-bTr"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XJC-nk-fRJ"/>
+                <constraint firstAttribute="bottom" secondItem="Cvz-Co-HGR" secondAttribute="bottom" id="Yq2-u7-ujh"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yvx-op-a7l"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="bFA-Lm-wDK"/>
+                <constraint firstAttribute="trailing" secondItem="Cvz-Co-HGR" secondAttribute="trailing" id="cQz-Mu-MHc"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ckv-AR-uzK"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eXb-sb-qAt"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fDl-xY-SlU"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fpR-Th-3ZF"/>
+                <constraint firstAttribute="bottom" secondItem="Cvz-Co-HGR" secondAttribute="bottom" id="hQO-Sy-fbI"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hhR-Cu-U2B"/>
+                <constraint firstAttribute="bottom" secondItem="Cvz-Co-HGR" secondAttribute="bottom" id="jHK-8S-V2s"/>
+                <constraint firstAttribute="trailing" secondItem="Cvz-Co-HGR" secondAttribute="trailing" id="jPF-5f-tgQ"/>
+                <constraint firstAttribute="trailing" secondItem="Cvz-Co-HGR" secondAttribute="trailing" id="jmr-FD-aHg"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kWH-9o-n7d"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="lth-Dv-MsM"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mDJ-4a-uk4"/>
+                <constraint firstAttribute="trailing" secondItem="Cvz-Co-HGR" secondAttribute="trailing" id="mlr-3X-7yv"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nab-0W-G9j"/>
+                <constraint firstAttribute="bottom" secondItem="Cvz-Co-HGR" secondAttribute="bottom" id="nxA-PP-vZN"/>
+                <constraint firstAttribute="trailing" secondItem="Cvz-Co-HGR" secondAttribute="trailing" id="s4f-fo-2Sf"/>
+                <constraint firstItem="Cvz-Co-HGR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wV8-b1-Iku"/>
+            </constraints>
+            <size key="customSize" width="355" height="459"/>
+            <connections>
+                <outlet property="cashierImage" destination="hse-B3-pWB" id="Iut-VE-Eyx"/>
+                <outlet property="cashierName" destination="Iz9-S7-YCz" id="96f-jj-WfT"/>
+            </connections>
+            <point key="canvasLocation" x="358.69565217391306" y="9.0401785714285712"/>
+        </collectionViewCell>
+    </objects>
+</document>
