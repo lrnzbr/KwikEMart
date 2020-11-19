@@ -4,11 +4,10 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="akbar.ttf">
+        <array key="Simpsonfont.ttf">
             <string>AkbarPlain</string>
         </array>
     </customFonts>
@@ -24,24 +23,26 @@
             <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kwik-E-Mart" translatesAutoresizingMaskIntoConstraints="NO" id="Izt-lA-wq8">
+                    <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
+                </imageView>
                 <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="P71-cD-CZs">
                     <rect key="frame" x="0.0" y="15" width="1366" height="974"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kwik-E-Mart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euv-l7-DTo">
-                            <rect key="frame" x="618.5" y="0.0" width="129.5" height="17.5"/>
-                            <fontDescription key="fontDescription" name="AkbarPlain" family="Akbar" pointSize="17"/>
+                            <rect key="frame" x="561" y="0.0" width="244" height="35.5"/>
+                            <fontDescription key="fontDescription" name="AkbarPlain" family="Akbar" pointSize="35"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cashier Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i8-1h-qeX">
-                            <rect key="frame" x="613" y="42.5" width="140" height="17.5"/>
+                            <rect key="frame" x="628.5" y="60.5" width="109" height="17.5"/>
                             <fontDescription key="fontDescription" name="AkbarPlain" family="Akbar" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Pk1-Hs-4r3">
-                            <rect key="frame" x="0.0" y="85" width="1366" height="889"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <rect key="frame" x="0.0" y="103" width="1366" height="871"/>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Kv-CI-gdU">
                                 <size key="itemSize" width="350" height="350"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -62,15 +63,17 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="P71-cD-CZs" secondAttribute="bottom" constant="15" id="S1T-pF-Cdo"/>
                 <constraint firstItem="P71-cD-CZs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="UfG-wo-rUg"/>
+                <constraint firstAttribute="trailing" secondItem="Izt-lA-wq8" secondAttribute="trailing" id="fKL-Ap-I0O"/>
+                <constraint firstItem="Izt-lA-wq8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jFO-4g-uIh"/>
+                <constraint firstItem="Izt-lA-wq8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lX4-no-DMI"/>
                 <constraint firstItem="P71-cD-CZs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nNz-vz-dDu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P71-cD-CZs" secondAttribute="trailing" id="z17-6U-qkY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Izt-lA-wq8" secondAttribute="bottom" id="zwC-fq-Icv"/>
             </constraints>
             <point key="canvasLocation" x="138.79941434846265" y="103.7109375"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Kwik-E-Mart" width="360" height="360"/>
     </resources>
 </document>

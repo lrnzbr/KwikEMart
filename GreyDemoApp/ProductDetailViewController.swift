@@ -13,10 +13,14 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var incrementButton: UIButton!
     @IBOutlet weak var quantityTextField: UITextField!
     
+    @IBOutlet weak var decrementButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        decrementButton.layer.cornerRadius = 5
+        incrementButton.layer.cornerRadius = 5
         imageView.image = product.productImage
         productNameLabel.text = product.productName
         productPriceLabel.text = String(format: "$%.02f",product.productPrice)
@@ -28,7 +32,7 @@ class ProductDetailViewController: UIViewController {
             quantityTextField.text = "1"
             return
         }
-        if qty > 0 {
+        if qty > 1 {
             
             quantityTextField.text = "\(qty-1)"
         }

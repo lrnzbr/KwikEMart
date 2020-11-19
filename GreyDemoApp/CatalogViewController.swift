@@ -29,6 +29,7 @@ class CatalogViewController: UIViewController,UICollectionViewDelegate, UICollec
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         itemsTableView.reloadData()
         menuCollectionView.reloadData()
     }
@@ -44,7 +45,7 @@ class CatalogViewController: UIViewController,UICollectionViewDelegate, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "catalogCell", for: indexPath) as! CatalogItemCollectionViewCell
         cell.productImage.image = product.productImage
         cell.productNameLabel.text = product.productName
-        cell.priceLabel.text = "$\(product.productPrice!)"
+        cell.priceLabel.text =  String(format: "$%.02f", product.productPrice! as! CVarArg)
         return cell
     }
     
